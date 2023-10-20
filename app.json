@@ -4,13 +4,24 @@
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/drasticroy/bug2",
+  "repository": "https://github.com/drasticroy/GURU-BOT",
   "stack": "container",
   "env": {
     "DATABASE_URL": {
       "description": "your mongodb database url",
       "required": false,
       "value": ""
+    },
+    "SESSION_ID": {
+      "description": "your session id",
+      "required": false,
+      "value": ""
+    },
+     "REMOVEBG_KEY": {
+      "description": "your RemoveBg api key",
+      "required": false,
+      "value": ""
+    }
     },
     "buildpacks": [
     {
