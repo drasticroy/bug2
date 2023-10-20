@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-bot (𝔊𝔲𝔯𝔲 𝔅𝔬𝔱 ℜ𝔢𝔠𝔬𝔡𝔢𝔡)",
+  "description": " 𝔾𝕦𝕣𝕦 𝔹𝕠𝕥 ℝ𝕖𝕔𝕠𝕕𝕖𝕕 𝔹𝕪 𝔻𝕣𝕒𝕤𝕥𝕚𝕔.",
+  "keywords": [
+    "whatsapp bot"
+  ],
+  "repository": "https://github.com/drasticroy/bug2",
+  "stack": "container",
+  "env": {
+    "DATABASE_URL": {
+      "description": "your mongodb database url",
+      "required": false,
+      "value": ""
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
